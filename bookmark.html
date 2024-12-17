@@ -18,6 +18,10 @@
                 <img src="./images/logo-bookmark.svg" alt="Logo">
             </div>
             <nav class="nav-bar">
+                <div class="hamburger-parent">
+                    <div class="hamburger"></div>
+                </div>
+
                 <ul class="nav-list">
                     <li><a href="#features">Features</a></li>
                     <li><a href="#downloads">Pricing</a></li>
@@ -55,15 +59,15 @@
             </div>
 
             <div class="about-tabs">
-                <ul>
-                    <li id="tab1"><a href="#simple">Simple Bookmarking</a></li>
+                <ul class="tabs">
+                    <li id="tab1" class="active-tab-header"><a href="#simple">Simple Bookmarking</a></li>
                     <li id="tab2"><a href="#speedy">Speedy Searching</a></li>
                     <li id="tab3"><a href="#easy">Easy Sharing</a></li>
                 </ul>
             </div>
 
             <div class="about-info">
-                <div class="simple" id="simple">
+                <div class="simple active" id="simple">
                     <div class="simple-image">
                         <img src="./images/illustration-features-tab-1.svg" alt="illustration tab1">
                     </div>
@@ -110,7 +114,9 @@
                 <p>We've got more browsers in the pipeline. Please do let us know if you've 
                     got a favourite you'd like us to prioritize.
                 </p>
-                <div class="cards">
+            </div>
+            <div class="cards">
+                <div class="chrome-card">
                     <article class="chrome">
                         <div class="chrome-image">
                             <img src="./images/logo-chrome.svg" alt="chrome logo">
@@ -121,10 +127,12 @@
                         </div>
                         <div class="dots">
                             <img src="./images/bg-dots.svg" alt="dots">
+                            <button class="extension-btn">Add & Install Extension</button>
                         </div>
-                        <button class="extension-btn">Add & Install Extension</button>
                     </article>
+                </div>
 
+                <div class="firefox-card">
                     <article class="firefox">
                         <div class="firefox-image">
                             <img src="./images/logo-firefox.svg" alt="firefox logo">
@@ -135,10 +143,12 @@
                         </div>
                         <div class="dots">
                             <img src="./images/bg-dots.svg" alt="dots">
+                            <button class="extension-btn">Add & Install Extension</button>
                         </div>
-                        <button class="extension-btn">Add & Install Extension</button>
                     </article>
-
+                </div>
+                
+                <div class="opera-card">
                     <article class="opera">
                         <div class="opera-image">
                             <img src="./images/logo-opera.svg" alt="opera logo">
@@ -149,75 +159,74 @@
                         </div>
                         <div class="dots">
                             <img src="./images/bg-dots.svg" alt="dots">
+                            <button class="extenstion-btn">Add & Install Extension</button>
                         </div>
-                        <button class="extenstion-btn">Add & Install Extension</button>
                     </article>
-                </div>
+                </div> 
             </div>
         </section>
 
         <section class="faq">
             <div class="faq-texts">
-                <h2>frequently asked questions</h2>
+                <h2>Frequently Asked Questions</h2>
                 <p>Here are some of our FAQs. If you have any other questions you'd like 
                     answered please feel free to email us.
                 </p>
             </div>
             <div class="recent-faq">
-                <hr>
-                <div class="faq1">
-                    <p>What is Bookmark?</p>
-                    <div class="arrow">
-                        <img src="./images/icon-arrow.svg" alt="arrow icon">
+                <div class="rfaq f1">
+                    <div class="qstn">
+                        <p>What is Bookmark?</p>
+                        <div class="arrow">
+                            <img src="./images/icon-arrow.svg" alt="arrow icon" class="icon-arrow1" data-target="answer1">
+                        </div>
                     </div>
-                    <div class="faq1-ans" hidden>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-                            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-                        </p>
-                    </div>
+                    <p class="ans" id="answer1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                        justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                    </p>
                 </div>
-                <hr>
-                <div class="faq2">
-                    <p>How can I request a new browser?</p>
-                    <div class="arrow">
-                        <img src="./images/icon-arrow.svg" alt="arrow icon">
+
+                <div class="rfaq f2">
+                    <div class="qstn">
+                        <p>How can I request a new browser?</p>
+                        <div class="arrow">
+                            <img src="./images/icon-arrow.svg" alt="arrow icon" class="icon-arrow2" data-target="answer2">
+                        </div>
                     </div>
-                    <div class="faq2-ans" hidden>
-                        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-                            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-                            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-                            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-                        </p>
-                    </div>
+                    <p class="ans" id="answer2">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                        Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                        ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
                 </div>
-                <hr>
-                <div class="faq3">
-                    <p>Is there a mobile app?</p>
-                    <div class="arrow">
-                        <img src="./images/icon-arrow.svg" alt="arrow icon">
+
+                <div class="rfaq f3">
+                    <div class="qstn">
+                        <p>Is there a mobile app?</p>
+                        <div class="arrow">
+                            <img src="./images/icon-arrow.svg" alt="arrow icon" class="icon-arrow3" data-target="answer3">
+                        </div>
                     </div>
-                    <div class="faq3-ans" hidden>
-                        <p> Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-                            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-                            sollicitudin ex et ultricies bibendum.
-                        </p>
-                    </div>
+                    <p class="ans" id="answer3">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                        urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                        sollicitudin ex et ultricies bibendum.
+                    </p>
                 </div>
-                <hr>
-                <div class="faq4">
-                    <p>What about other Chromium browsers?</p>
-                    <div class="arrow">
-                        <img src="./images/icon-arrow.svg" alt="arrow icon">
+
+                <div class="rfaq f4">
+                    <div class="qstn">
+                        <p>What about other Chromium browsers?</p>
+                        <div class="arrow">
+                            <img src="./images/icon-arrow.svg" alt="arrow icon" class="icon-arrow4" data-target="answer4">
+                        </div>
                     </div>
-                    <div class="faq4-ans" hidden>
-                        <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-                            vitae neque eget nisl gravida pellentesque non ut velit.
-                        </p>
-                    </div>
+                    <p class="ans" id="answer4">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                        vitae neque eget nisl gravida pellentesque non ut velit.
+                    </p>
                 </div>
-                <hr>
+                
+                <button class="faq-btn">More Info</button>
             </div>
-            <button class="info-btn">More Info</button>
         </section>
 
         <section id="subscribe">
@@ -231,15 +240,13 @@
 
         <footer>
             <div class="footer-links">
-                <div class="footer-logo-box">
+                <div class="footer-logobox">
                     <a href=""><img src="./images/logo-bookmark.svg" alt="Logo"></a>
                 </div>
                 <nav class="footer-nav">
-                    <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#downloads">Pricing</a></li>
-                        <li><a href="#subscribe">Contact</a></li>
-                    </ul>
+                    <a href="#features">Features</a>
+                    <a href="#downloads">Pricing</a>
+                    <a href="#subscribe">Contact</a>
                 </nav>
             </div>
 
@@ -252,5 +259,11 @@
                 </div>
             </div>
         </footer>
+
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/Oluzicco22">Isaac Olubusoye</a>.
+        </p>
     </div>
+    <script src="./index.js"></script>
 </body>
